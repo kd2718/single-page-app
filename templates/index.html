@@ -1,11 +1,28 @@
 <!doctype html>
 <html ng-app="basic-spa">
 <head>
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="/bower_components/materialize/dist/css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/base.css">
+	<!-- fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<!-- javascript -->
 	<script src="/bower_components/angular/angular.min.js"></script>
 	<script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
-	<script src="/app/app.js"></script>
+	<script src="/static/app/app.js"></script>
+	<script src="/static/app/controllers.js"></script>
 </head>
 <body>
-	<div ui-view></div>	
+	<nav>
+	    <div class="nav-wrapper">
+	      <a href="#" class="brand-logo header"> Xepler </a>
+	      <ul id="nav-mobile" class="right hide-on-med-and-down">
+	        <li><a ui-sref="home"> Home </a></li>
+			<li><a ui-sref="about"> About </a></li>
+	      </ul>
+	    </div>
+  	</nav>
+
+  	<div ui-view></div>
 </body>
 </html>
