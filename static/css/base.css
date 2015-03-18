@@ -1,5 +1,5 @@
 .header {
-	margin-left: 3px;
+	margin-left: 5px;
 	font-weight: 300;
 	font-family: Roboto;
 	color: white;
@@ -8,11 +8,11 @@
 .panel {
 	border-radius: 5px;
 	background-color: #00BFFF;
-	min-height: 250px;
+	min-height: 300px;
 }
 
 .top-panel {
 	border-radius: 5px;
 	background-color: #00BFFF;
-	height: 65px;
+	height: 70px;
 }
