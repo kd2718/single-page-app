@@ -6,7 +6,7 @@
       
         $stateProvider
             .state('home', {
-                url: "/home",
+                url: "/",
                 templateUrl: "/templates/home.html",
                 controller: "testController1",
             })
@@ -14,9 +14,14 @@
                 url: "/about",
                 templateUrl: "/templates/about.html",
                 controller: "testController2",
+            })
+            .state('404', {
+                url: "/404",
+                templateUrl: "/templates/404.html",
+                controller: "testController1",
             });
 
-            $urlRouterProvider.otherwise("/home");
+            $urlRouterProvider.otherwise("/404");
         });
 })();
 
