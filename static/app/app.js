@@ -1,4 +1,5 @@
 (function(){
+    
 	angular
         .module('basic-spa', ['ui.router'])
         .config(function($stateProvider, $urlRouterProvider) {
@@ -19,3 +20,7 @@
         });
 })();
 
+// This is not the jQuery you are looking for move along
+$(document).ready(function(){
+    $('.button-collapse').sideNav();
+})

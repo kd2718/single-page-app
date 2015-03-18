@@ -9,19 +9,26 @@
 	<!-- javascript -->
 	<script src="/bower_components/angular/angular.min.js"></script>
 	<script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="/bower_components/materialize/dist/js/materialize.min.js"></script>
 	<script src="/static/app/app.js"></script>
 	<script src="/static/app/controllers.js"></script>
 </head>
 <body>
 	<nav>
-	    <div class="nav-wrapper">
-	      <a href="#" class="brand-logo header"> Xepler </a>
-	      <ul id="nav-mobile" class="right hide-on-med-and-down">
-	        <li><a ui-sref="home"> Home </a></li>
+		<div class="nav-wrapper">
+		  <a href="#!" class="brand-logo header">Xepler</a>
+		  <a href="#" data-activates="mobile-links" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+		  <ul class="right hide-on-med-and-down">
+		    <li><a ui-sref="home"> Home </a></li>
 			<li><a ui-sref="about"> About </a></li>
-	      </ul>
-	    </div>
-  	</nav>
+		  </ul>
+		  <ul class="side-nav" id="mobile-links">
+		    <li><a ui-sref="home"> Home </a></li>
+			<li><a ui-sref="about"> About </a></li>
+		  </ul>
+		</div>
+	</nav>
 
   	<div ui-view></div>
 </body>
