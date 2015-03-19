@@ -15,6 +15,11 @@
                 templateUrl: "/templates/about.html",
                 controller: "testController2",
             })
+            .state('contact', {
+                url: "/contact",
+                templateUrl: "/templates/contact.html",
+                controller: "testController1",
+            })
             .state('404', {
                 url: "/404",
                 templateUrl: "/templates/404.html",
