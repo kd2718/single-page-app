@@ -7,8 +7,13 @@
         $scope.items = [6, 7, 8, 9, 10]
     }
 
+    function blogController($scope, $stateParams){
+        $scope.blogId = $stateParams.blogId;
+    }
+
 	angular
         .module('basic-spa')
         .controller('testController1', testController1)
-        .controller('testController2', testController2);
+        .controller('testController2', testController2)
+        .controller('blogController', blogController);
 })();

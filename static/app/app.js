@@ -20,6 +20,11 @@
                 templateUrl: "/templates/contact.html",
                 controller: "testController1",
             })
+            .state('blog', {
+                url: "/blog/{blogId:int}",
+                templateUrl: "/templates/blog.html",
+                controller: "blogController",
+            })
             .state('404', {
                 url: "/404",
                 templateUrl: "/templates/404.html",
