@@ -12,6 +12,14 @@
 	min-height: 300px;
 }
 
+.login-panel {
+	padding: 10px;
+	border-radius: 5px;
+	margin-bottom: 5px;
+	background-color: #FFF;
+	min-height: 200px;
+}
+
 .light-blue {
 	background-color: #00BFFF;
 }

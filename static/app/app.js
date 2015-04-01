@@ -1,5 +1,4 @@
 (function(){
-    
 	angular
         .module('basic-spa', ['ui.router'])
         .config(function($stateProvider, $urlRouterProvider) {
@@ -13,7 +12,7 @@
             .state('about', {
                 url: "/about",
                 templateUrl: "/templates/about.html",
-                controller: "testController2",
+                controller: "testController1",
             })
             .state('contact', {
                 url: "/contact",
