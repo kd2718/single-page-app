@@ -11,7 +11,7 @@
         $scope.login = function(){
             // console.log(loginForm.input.$valid);
             // Send $scope.username and $scope.password to API here
-            // In the success of the AJAZ request change pages here
+            // In the success of the AJAX request change pages here
         }
     }
 
